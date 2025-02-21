@@ -1,0 +1,6 @@
+- wherever heap cannot fit in, try to think about monotonic stack
+- next greater/smaller element/element_index and previous greater/smaller element/element_index is utilised in majority of problems
+
+patterns
+- elements are pushed into the stack and popped from the stack based on some condition
+- for problems involving finding max area of histogram or maximal rectangle of grid involves finding pse and nse

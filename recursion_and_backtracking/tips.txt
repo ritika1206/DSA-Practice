@@ -1,0 +1,5 @@
+Backtracking Pattern
+
+- find the count of < xyz where <condition> >
+- whether exist or not < xyz where <condition> >
+- return all < xyz where <condition> >

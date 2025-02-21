@@ -1,0 +1,86 @@
+Done:
+  - determining accepted time complexity from the given constraints
+  - internal implementation of hash
+
+  - debug: 907. Sum of Subarray Minimums
+  - didn't understand the intuition behind deque (monotonic stack) in sliding window maximum
+
+  - discuss test case [[],[32],[82],[73],[99],[91]] of https://leetcode.com/problems/online-stock-span/ (online stock span)
+  - review LRU code once
+
+  - this partcular case of celebrity problem:
+
+    if matrix[top][bottom] == 0 and matrix[bottom][top] == 0 # both doesn't know each other
+      top += 1
+      bottom -= 1
+    end
+
+  - intuition behind remove k digits to form the smallest number problem solution
+  - review sliding window maximum solution
+  - can we call max path sum in binary tree as sum of diameter in binary tree?
+    we cannot since diameter is the max path length and max path sum is the sum of nodes val and it is possible that all the nodes val are negative in the diameter path
+    diameter nodes sum is not max (if all nodes are negative)
+  - Symmetric Tree (this can also be done via dfs (matching root.left.left with root.right.right))
+  - 2 sum in BST, https://leetcode.com/problems/two-sum-iv-input-is-a-bst/ (no need to do it via BST iterator, we can do it via inorder traversal and apply 2 sum method over that)
+
+
+Look again on my end:
+  - discuss debug https://leetcode.com/problems/recover-binary-search-tree/, recover BST
+  - https://leetcode.com/problems/count-good-numbers/submissions/1499416207/
+  - https://leetcode.com/problems/swapping-nodes-in-a-linked-list/, swapping nodes in ll (try again on your end)
+  - https://leetcode.com/problems/powx-n/, recusive implementation of x ** n (add solution to vs code as well)
+  - vertical order traversal https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/description/ (just manipulating the ans hash, add solution in vs code as well)
+  - optimization of following part in combination sum 2
+    if target == 0
+        ans[subset.sort] = true
+        return
+    end
+  - https://leetcode.com/problems/count-complete-tree-nodes/description/ [why are we using different methods for calculating height of left subtree and rightsubtree] [look into it again by myself]
+  - discuss tree construction with inorder and postorder traversal (review again on my end)
+  - delete a node in BST (one way would be value swapping with left predecessor or right successor with root) (also try to code the actual node deleting solution)
+
+
+Discuss
+  - intuition behind step2 of finding cycle start point (connect again)
+  - sudoku solver, code review
+  - discuss solution of m coloring question
+  - discuss and review rat in a maze code
+  - discuss https://leetcode.com/problems/count-square-submatrices-with-all-ones/description/
+  - review code of https://leetcode.com/problems/partition-array-for-maximum-sum/ (Partition Array for Maximum Sum)
+  - burst balloons
+  - discuss, https://leetcode.com/problems/longest-string-chain/description/ longest string chain
+  - didn't get the intuition behind dp1[i] + dp2[i] - 1 representing the longest length of bitonic subsequence 
+  - why following code is not working for : totxal number of longest increasing subsequences
+
+    def find_number_of_lis(nums)
+      len = Hash.new(0)
+      max_len = f(0, -1, nums, {}, len)
+      len[max_len]
+    end
+
+    def f(i, prev_ind, nums, h, len)
+      return h[[i, prev_ind]] if h[[i, prev_ind]]
+      return 0 if i == nums.size
+
+      take = 0
+      if prev_ind == -1 || nums[prev_ind] < nums[i]
+        take = 1 + f(i + 1, i, nums, h, len)
+      end
+
+      not_take = f(i + 1, prev_ind, nums, h, len)
+
+      max_val = [take, not_take].max
+      len[max_val] += 1
+      h[[i, prev_ind]] = max_val
+    end
+  - Longest Common Substring | (DP - 27) (recursive solution)
+  - discuss https://leetcode.com/problems/wildcard-matching/ (Wildcard Matching)
+  - discuss target sum solution https://leetcode.com/problems/target-sum/
+  - review code of https://leetcode.com/problems/minimum-falling-path-sum/ (Minimum Falling Path Sum)
+  - discuss solution 2 of https://leetcode.com/problems/01-matrix/ (01 matrix)
+  - discuss word ladder 2 solution https://leetcode.com/problems/word-ladder-ii/
+  - discuss https://leetcode.com/problems/path-with-minimum-effort/ (Path With Minimum Effort)
+  - intuition behind Cheapest flights within k stops https://leetcode.com/problems/cheapest-flights-within-k-stops/description/
+  - intuition behind coordinate shift in 947. Most Stones Removed with Same Row or Column https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/description/ , discuss whole
+  - review https://leetcode.com/problems/making-a-large-island/
+

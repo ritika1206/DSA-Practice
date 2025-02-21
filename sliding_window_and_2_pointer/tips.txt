@@ -1,0 +1,30 @@
+1. Constant Window
+  - When Window size is fixed
+  - Find the subarray of size k whose sum is equal to s
+  - Eg: [1, 2, 3, 4, 1, 8, 2, -3, 2], k = 4, s = 14
+    - i = 0, j = k - 1
+    - run a loop till j < n - 1 and check for the subarray, break if unique solution exist
+
+2. Largest subarray/substring where < condition >
+  - when asked to return the largest subarray/substring then it can only be implemented using the better approach not the optimal one
+  - Eg: find the largest subarray with sum k (this particular problem will be done using the concept of prefix sum)
+  - 3 approaches can exist here, brute force, better and Optimal
+    - Brute Force
+      - find all subarrays and find the maximum length among those which is satisfying the condition
+      - the inner loop can be made to run lesser number of time using a break statement based on the condition
+    - better
+      - i = 0, j = 0
+      - keep expanding and shrink only when condition is not being satisfied and till condition is not being satisfied
+    - Optimal
+      - i = 0, j = 0
+      - keep expanding and shrink only till the max calculated length (or shrink by only 1)
+    
+3. Number of subarrays where < condition >    
+  - Eg: Find the number of subarrays with sum = k (this particular example is solved using prefix sum approach(sort of reverse eng), not the below approach)
+  - x = num of subarrays with sum <= k
+  - y = num of subarrays with sum <= k - 1
+  - the answer would be x - y
+
+4. Shortest length of subarray/substring (or minimum window length) where < condition >
+  - whenever you get the valid window, you shrink the window till you get the invalid window
+    

@@ -1,0 +1,4 @@
+- getting things in discussion resolved
+- resolving things by myself which are in discussion and assigned to me
+- solving last left backtracking questions and getting them pass test cases
+- revising prolems uptill now

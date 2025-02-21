@@ -1,0 +1,47 @@
+- bs
+- sliding window, 2 pointer
+- stack and queue
+- linked list
+- binary trees then BST
+- recursion
+- DP
+- graph
+  - complete revision and gap filling
+  - create tips.txt for backtracking, DP and graphs
+- greedy
+- heaps
+- arrays
+- medium string problems
+- bit manupulation
+
+
+overall
+  - greedy
+  - heap
+  - revision
+  - lld
+
+
+
+before friday
+ - working of devise (cookie storage and session storage)
+ - how file storage is working
+ - database concepts - sharding, some queries etc
+ - some rails concepts
+  - locking, deadlocks
+  - sti, polymorphism
+  - n + 1 query, eagerload, preload, includes, joins
+  - making an http or https request to an api using Ruby
+  - sequence in which the callbacks and filters executed
+  - when rollback can happens during the cycle of callbacks
+  - quick revision of elastic search query structures and how the request is send to the elasticsearch server
+  - quick revision of graphql structure
+  - quick revision of sql commands syntax if required
+  - how kaminari works
+
+- things which can be asked from resume
+  - the biggest feature which you built 
+  - what all challenges did you face in that and how were they resolved
+  - about the research
+  - about the projects
+  -   

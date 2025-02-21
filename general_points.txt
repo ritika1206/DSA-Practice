@@ -1,0 +1,60 @@
+- take care of time
+- execute to debug, not dry run unless asked
+- speak clearly and loud
+- try to ask for hint when required (time will tell that its time to ask hint)
+
+
+
+########## System Design ############
+
+- lld design problems
+  - chess / board game
+  - parking lot management
+- hld problems
+  - calculator
+  - tic tac toe
+  - request limiter
+  - authentication system
+  - ride booking / sharing platform (uber, ola etc)
+  - event / ticket book platform (bookmyshow, dmrc, train ticket, make my trip, go ibibo)
+  - hotel booking (airbnb, oyo)
+  - social media platform (youtube, facebook, instagram, snapchat, linkedin, twitter)
+  - dating apps (bumble, tinder)
+  - chatting apps (telegram, whatsapp, discord, )
+  - e-commerce platform (amazon, flipkart, myntra, meesho)
+  - food delivery app (swiggy, zomato, blinkit)
+  - ott apps (amazon prime, netflix, hotstar)
+  - online forums (quora, stackoverflow)
+  - online video gaming platforms (steam)
+  - paytm, gpay
+  - payment gateway (stripe, razorpay)
+  - service booking (urban company, yes madam)
+  - zerodha, coinbase
+  - house buying (housing.com)
+  - car buying (car dekho)
+  - lenskart
+  - google map
+  - google calender
+  - google meet, zoom
+  - gmail
+  - google drive
+  - spotify
+  - slack
+- dsa problems
+- * sql problems or operating system related
+- puzzle
+- intro
+- discussinhg about the work done in the current job
+  - what majorly worked upon (what all areas of the major system are touched)
+  - challenges which were faced and how they were approached and tackled
+  - what were the major take aways and learning from the current job
+  - discuss about the lld and hld of current job system
+    - discussion about how things currently are
+    - scopes of imprvemnet in current system
+    - specification / depth questing of any work done in current job regarding how it was done or how something was managed
+    - and situation based follow up constructed/structured over the current system (if the things were like this instead of that / if this thing is omitted or added to the current system, how would to approach to archive something)
+
+
+Discuss
+
+  - How images or different files are stored in DB

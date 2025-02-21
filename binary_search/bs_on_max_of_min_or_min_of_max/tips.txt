@@ -1,0 +1,6 @@
+- the pattern of these problems will be like
+  - find the maximum of all possible minimum values
+  - find the minimum of all possible maximum values
+- to decide if a particular min value or max value will be possible / permissible, another parameter will be given
+  - like all cows should be placed
+  - books should be assigned to n students, not > n students

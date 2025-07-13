@@ -6,8 +6,7 @@
 # it helps to detect negative edge weight cycles as well
 # This is sort of a DP solution
 # this is not not as intuitive as dijkstras or bellman ford, it is more of a brute force approach where all combinations of paths have been tried to get the shortest paths
-
-# TC - O(E ^ 3) or O(E * V)
+# TC - O(V ^ 3) or O(E * V)
 def floyed_distance(adj, n)
   cost_mat = Array.new(n) { Array.new(n, Float::INFINITY) }
 

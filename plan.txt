@@ -40,8 +40,55 @@ before friday
   - how kaminari works
 
 - things which can be asked from resume
-  - the biggest feature which you built 
+  - the biggest feature which you built
   - what all challenges did you face in that and how were they resolved
   - about the research
   - about the projects
-  -   
+
+- DSA revise
+  - graphs
+  - DP
+  - trees
+  - linked list
+  - stack and queue
+  - slinding window and 2 pointer
+  - binary search
+  - backtracking
+  - searching and sorting algorithms
+  - heaps from neetcode list
+  - arrays from neetcode list including 3 sum and 4 sum
+  - bit manupulation
+  - greedy
+- DSA for tomorrow
+  - revision of points
+  - arrays, greedy
+  - questions added in pending and discussion
+  - remaining STAR, HR and resume points and existing revision
+- complete all STAR scenario and last HR interview point added
+- Rails and SQL revision points
+- LLD problem statements
+- HLD problem statements
+- react crash course
+- Adobe specific DSA and system design questions
+- Had a call with him regarding all the system design specific things which he was asked
+- docker and AWS udemy
+
+
+
+- Java search
+- SOLID
+- lld more examples
+- lld problem statements
+- DSA quick review
+  - binary search
+  - arrays
+  - other revise (notion)
+  - backtracking
+  - heaps
+- puzzles
+- STAR and HR questions
+- query plan related
+- hld e-commerce
+- auth related doubts
+- sharding
+- cdn and s3

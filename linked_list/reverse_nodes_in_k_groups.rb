@@ -2,14 +2,13 @@
 
 # TC - O(n), SC - O(n/k)
 def reverse_k_group(head, k)
-  count = k
   heads_and_tails = []
   temp_head = head
+  temp = head
   while !temp.nil?
     temp = temp_head
-    while count > 1
-      break if temp.nil?
-
+    count = k
+    while count > 1 && !temp.nil?
       temp = temp.next
       count -= 1
     end

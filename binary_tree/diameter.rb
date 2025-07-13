@@ -16,8 +16,8 @@ class BinaryTree
   def calculate_diameter(node)
     return 0 if node.nil?
 
-    left_depth = calculate_diameter(node.left)
-    right_depth = calculate_diameter(node.right)
+    left_depth = calculate_diameter(node.left) # can also be called as left_edges
+    right_depth = calculate_diameter(node.right) # can also be called as right_edges
     @max_diameter = [@max_diameter, left_depth + right_depth].max
 
     1 + [left_depth, right_depth].max

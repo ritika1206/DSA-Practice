@@ -4,6 +4,8 @@
 # it doesn't work with negative edge weights
 # when edge weights are constant then queue can be used instead of min heap
 # TC - O(edges * log(vertices)) or O(edges * log(edges))
+# TC - O(Elog(V)) or O(Elog(E))
+# SC - O(V)
 
 # TC derivation -
   # (number of nodes) * (log(size of min heap) + ((max number of edges) * log(size of min heap)))

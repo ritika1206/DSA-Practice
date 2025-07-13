@@ -1,6 +1,14 @@
 # https://leetcode.com/problems/rotting-oranges/description/
-
+# It is an example of multi-source BFS
 # TC - O(m * n), SC - O(m * n)
+
+# Approach:
+# 1. Count the number of fresh oranges and rotten oranges.
+# 2. Add all the rotten oranges to the queue.
+# 3. Run a BFS from all the rotten oranges.
+# 4. Keep track of the time taken to rot all the fresh oranges.
+# 5. If all the fresh oranges are rotten, return the time taken.
+# 6. Else return -1.
 DIRS = [[1, 0], [-1, 0], [0, 1], [0, -1]]
 def oranges_rotting(grid)
   fresh_oranges_count = 0
@@ -43,3 +51,7 @@ end
 def valid_node?(row, col, grid, visited)
   row >= 0 && row < grid.size && col >= 0 && col < grid.first.size && grid[row][col] == 1 && !visited[[row, col]]
 end
+
+grid = [[2, 1, 1], [1, 1, 0], [0, 1, 1]]
+puts oranges_rotting(grid)
+# Output: 4

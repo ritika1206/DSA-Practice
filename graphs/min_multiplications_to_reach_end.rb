@@ -9,23 +9,17 @@ def min_steps(src, dest, nums)
 end
 
 def shortest_distance(src, dest, nums)
-  steps = Hash.new(Float::INFINITY)
-  dist[src] = 0
-  min_h = Containers::MinHeap.new
-  min_h << [0, src]
+  queue = Containers::Queue.new
+  queue << [0, src]
 
-  while !min_h.empty?
-    step, node = min_h.pop
+  while !queue.empty?
+    step, node = queue.pop
+    return step if node == dest
 
     nums.each do |n|
       nn = (node * n) % (10 ** 5)
-      return step + 1 if nn == dest
-
-      if steps[nn] > step + 1
-        steps[nn] = step + 1
-        min_h << [steps[nn], nn]
-      end
+      queue << [step + 1, nn]
     end
   end
-  # steps
+  -1
 end

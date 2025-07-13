@@ -1,29 +1,20 @@
 # https://leetcode.com/problems/minimum-falling-path-sum/
 
+# TC - O(n^2)
+# SC - O(n^2)
 def min_falling_path_sum(matrix)
-  min = Float::INFINITY
-  i = 0
-  h = {}
-  while i < matrix.first.size
-    min = [min, f(1, i, matrix, h)].min
-    i += 1
+  min = ::Float::INFINITY
+  n = matrix.size
+  (0..(n - 1)).each do |col|
+      min = [min, f(col, 0, matrix, {})].min
   end
   min
 end
 
-def f(row, prev_col, grid, h)
-  return h[[row, prev_col]] if h[[row, prev_col]]
-  return 0 if row == grid.size
+def f(col, row, matrix, h)
+  return h[[row, col]] if h[[row, col]]
+  return Float::INFINITY if col >= matrix.size || col < 0
+  return matrix[row][col] if row == matrix.size - 1
 
-  left = (grid[row][prev_col - 1] || Float::INFINITY)
-  if left != Float::INFINITY
-    left += f(row + 1, prev_col - 1, grid, h)
-  end
-  mid = grid[row][prev_col] + f(row + 1, prev_col, grid, h)
-  right = grid[row][prev_col + 1] || Float::INFINITY
-  if right != Float::INFINITY
-    right += f(row + 1, prev_col + 1, grid, h)
-  end
-
-  h[[row, prev_col]] = [left, mid, right].min
+  h[[row, col]] = matrix[row][col] + [f(col - 1, row + 1, matrix, h), f(col, row + 1, matrix, h), f(col + 1, row + 1, matrix, h)].min
 end

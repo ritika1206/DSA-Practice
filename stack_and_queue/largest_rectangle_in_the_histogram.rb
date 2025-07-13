@@ -1,7 +1,7 @@
 # https://leetcode.com/problems/largest-rectangle-in-histogram/description/
 
 # at every element go till the next smaller element is encountered and go till the previous smaller element is encountered, add both the distances and multiply it by the length of that element
-# max area at every block would be arr[i] * (nse - pse + 1), need to find the max among these areas
+# max area at every block would be arr[i] * (nse - pse - 1), need to find the max among these areas
 # here we want that the top element in stack should be < height[i], since we want to find the next smaller element than height[i], so we will be popping if the top element is >= height[i]
 # if we required the next greater element then we would have popped if the top element is smaller than height[i]
 

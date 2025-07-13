@@ -1,5 +1,14 @@
 # https://leetcode.com/problems/flood-fill/
+# TC - O(m * n), SC - O(m * n)
 
+# Approach
+# 1. Start from the given point and do a BFS traversal.
+# 2. Keep track of visited nodes.
+# 3. If the next node is valid, add it to the queue and mark it as visited.
+# 4. Change the color of the current node.
+# 5. Return the image.
+
+require 'containers'
 DIRS = [[1, 0], [-1, 0], [0, 1], [0, -1]]
 def flood_fill(image, sr, sc, color)
   queue = Containers::Queue.new

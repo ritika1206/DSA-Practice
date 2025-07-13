@@ -10,7 +10,7 @@ def bst_from_preorder(preorder)
       n > root.val
   end
   right_head_ind = ind ? ind + 1 : preorder.size
-  
+
   left_preorder = preorder[1..(right_head_ind - 1)]
   right_preoder = preorder[right_head_ind..]
   root.left = bst_from_preorder(left_preorder)

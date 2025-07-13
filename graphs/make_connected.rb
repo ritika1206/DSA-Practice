@@ -8,6 +8,7 @@ def make_connected(n, connections)
   connections.each do |(u, v)|
     djs.union(u, v)
   end
+  # It is telling about number of connected components
   (0..(n - 1)).each do |node|
     total_parents[djs.find_parent(node)] = true
   end

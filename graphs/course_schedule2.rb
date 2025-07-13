@@ -1,7 +1,7 @@
 # https://leetcode.com/problems/course-schedule-ii/description/
 
 def can_finish(num_courses, prerequisites)
-  h = Hash.new {|h, k| h[k] = []}
+  h = Hash.new { |h, k| h[k] = [] }
   stack = []
   prerequisites.each do |(node, parent_node)|
     h[parent_node] << node

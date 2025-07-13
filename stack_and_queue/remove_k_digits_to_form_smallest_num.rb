@@ -17,7 +17,7 @@ def remove_kdigits(num, k)
     st << n
   end
 
-  # edge case 1
+  # edge case 1: when digits are sorted in increasing order
   while k > 0
     st.pop
     k -= 1

@@ -9,7 +9,7 @@ def child_sum_prop(root)
 
   if root.val <= child_data
     root.val = root.left.val + root.right.val
-  else root.val > (root.left.val + root.right.val)
+  elsif root.val > (root.left.val + root.right.val)
     root.left.val = root.val if root.left
     root.right.val = root.val if root.right
   end

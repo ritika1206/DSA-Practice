@@ -7,12 +7,12 @@
   # total water would be the sum of the water stored at roof of all buildings
 
 def trap(height)
-  i = 0
-  j = height.size - 1
   prefix_max = []
   suffix_max = []
   pm = 0
   sm = 0
+  i = 0
+  j = height.size - 1
   while i < height.size
     pm = [pm, height[i]].max
     prefix_max[i] = pm

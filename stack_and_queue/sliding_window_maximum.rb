@@ -1,5 +1,6 @@
 require 'algorithms'
 
+# here we are pusing elements in the deque, but we can also push the element indexes in the deque as well, in that case the logic for pop front will be -dq.front <= i - k
 def max_sliding_window(nums, k)
   return [nums.max] if k == nums.length
   return nums if k == 1
@@ -7,7 +8,7 @@ def max_sliding_window(nums, k)
   i = 0
   dq = Containers::RubyDeque.new
   while i < k
-    while !dq.empty? && dq.back < nums[i]
+    while !dq.empty? && dq.back <= nums[i]
       dq.pop_back
     end
     dq.push_back(nums[i])
@@ -17,7 +18,7 @@ def max_sliding_window(nums, k)
   j = k
   all_max = [dq.front]
   while j < nums.size
-    while !dq.empty? && dq.back < nums[j] && dq.size 
+    while !dq.empty? && dq.back <= nums[j]
       dq.pop_back
     end
     dq.push_back(nums[j])

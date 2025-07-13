@@ -14,11 +14,12 @@ end
 
 def f(i, k, nums, h)
   return h[[i, k]] if h[[i, k]]
+  return 2 if k == 0 && i == nums.size - 1 && nums[i] == 0
   return 1 if k == 0
   return 0 if i == nums.size && k > 0
 
   not_pick = f(i + 1, k, nums, h)
   pick = 0
-  pick = 1 + f(i + 1, k - nums[i], nums, h) if k >= nums[i]
+  pick = f(i + 1, k - nums[i], nums, h) if k >= nums[i]
   h[[i, k]] = not_pick + pick
 end

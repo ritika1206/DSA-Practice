@@ -17,7 +17,7 @@ def number_of_substrings(s)
   while i < s.size
     last_seen_at[s[i]] = i
     min_occurance_ind = last_seen_at.values.min
-    substrings_count += min_occurance_ind + 1 if last_seen_at.keys.count == 3
+    substrings_count += min_occurance_ind + 1 if last_seen_at.keys.length == 3
     i += 1
   end
   substrings_count

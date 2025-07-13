@@ -1,6 +1,6 @@
 # https://www.youtube.com/watch?v=aBxjDBC4M1U
 
-# To whether 2 nodes belong to the same component of the graph in constant time
+# To find whether 2 nodes belong to the same component of the graph in constant time
 # this is used in dynamic graphs - graphs which keeps on changing their configuration at every moment
 # it provides 2 functions
   # find_parent

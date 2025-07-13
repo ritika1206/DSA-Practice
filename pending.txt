@@ -2,3 +2,30 @@
 - resolving things by myself which are in discussion and assigned to me
 - solving last left backtracking questions and getting them pass test cases
 - revising prolems uptill now
+
+##################################################################################
+
+- Graphs
+  - path with minimum efforts
+  - cheapest flights with k stops
+  - most stones removed with same row and column
+  - accounts merge
+  - number of islands 2
+  - make a large island
+  - swim in rising water
+
+- DP
+  - Partition Array Into Two Arrays to Minimize Sum Difference
+  - unbounded knapsack
+  - rod cutting
+  - shortest common supersequence
+
+- Trees
+  - Vertical order traversal revise
+
+- Linked list
+  - Intuition behind cycle start point
+  - Intuition behind cycle Length
+
+- Stacks and queue
+  - sum of subarray minimum and maximum

@@ -5,7 +5,7 @@
   # after the loop checking if any bkt remaining in stack, in this case as well it wont be a valid
 
 def is_valid?(s)
-stack = []
+  stack = []
   closing = {')' => '(', ']' => '[', '}' => '{'}
   i = 0
   while i < s.size
@@ -15,6 +15,6 @@ stack = []
       stack << s[i]
     end
     i += 1
-  end   
-  stack.size == 0 
+  end
+  stack.size == 0
 end

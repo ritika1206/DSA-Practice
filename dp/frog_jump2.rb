@@ -13,7 +13,7 @@ def f(i, heights, n)
   (1..k).each do |step|
     next if step + i > n - 1
 
-    min = [min, (heights[i] - height[i + step]).abs + f(i + step, heights, n)]
+    min = [min, (heights[i] - height[i + step]).abs + f(i + step, heights, n)].min
   end
   h[i] = min
 end

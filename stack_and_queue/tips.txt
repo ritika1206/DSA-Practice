@@ -2,5 +2,9 @@
 - next greater/smaller element/element_index and previous greater/smaller element/element_index is utilised in majority of problems
 
 patterns
+- whenever we talk about `next greater/smaller` then always nove from end to begin to prepare monotonic stack
+  - for nge, monotonic stack will be in decreasing order
+  - for nse, monotonic stack will be in increasing order
+- whenever we talk about `previous greater/smaller` then always nove from begin to end to prepare monotonic stack
 - elements are pushed into the stack and popped from the stack based on some condition
 - for problems involving finding max area of histogram or maximal rectangle of grid involves finding pse and nse

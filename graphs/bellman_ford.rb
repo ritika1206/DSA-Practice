@@ -18,6 +18,7 @@
 # TC - O(V ^ 3) or O(V * E)
 def shortest_distance(edges, src, dest, n)
   dist = Hash.new(Float::INFINITY)
+  dist[src] = 0
 
   (n - 1).times do
     edges.each do |(u, v, w)|
@@ -31,6 +32,7 @@ end
 
 def detect_negative_weight_cycle(edges, src, dest, n)
   dist = Hash.new(Float::INFINITY)
+  dist[src] = 0
 
   (n - 1).times do
     edges.each do |(u, v, w)|

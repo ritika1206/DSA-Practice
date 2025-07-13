@@ -2,6 +2,15 @@
 
 # calling dfs over all the zeroes present at the boundary and marking then as visited
 # once all boundary zeroes dfs is complete then iterate over the matrix and convert all unvisited zeroes into X
+
+# Approach
+# 1. Start from the boundary and do a DFS traversal.
+# 2. Mark all 0 nodes which are connected to the boundary as visited.
+# 3. Iterate over the matrix and convert all unvisited 0s to X.
+# 4. Return the matrix.
+#
+# TC - O(m * n), SC - O(m * n)
+# m - Number of rows, n - Number of columns
 DIRS = [[1, 0], [0, 1], [-1, 0], [0, -1]]
 def solve(board)
   v = {}

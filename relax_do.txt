@@ -1,0 +1,4 @@
+1. LRU
+2. LFU
+3. Min Stack optimal approach
+4. Infix, Prefix and Postfix conversion problems

@@ -7,7 +7,7 @@
 def sum_subarray_mins(arr)
   pse = get_pse_index(arr)
   nse = get_nse_index(arr)
-  
+
   total_sum = 0
   arr.each_with_index do |n, i|
     # total_sum += [(i - pse[i]), 1].max * [(nse[i] - i), 1].max * n

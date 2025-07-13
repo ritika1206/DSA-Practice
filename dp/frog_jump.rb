@@ -12,7 +12,7 @@ def f(i, heights, n)
   return 0 if i == n - 1
   return (heights[i] - height[i + 1]).abs if i == n - 2
 
-  step1 = (heights[i] - height[i + 1]).abs + f(i + 1, heights, n)
-  step2 = (heights[i] - height[i + 2]).abs + f(i + 2, heights, n)
-  h[i] = [step1, step2].min
+  step1_cost = (heights[i] - height[i + 1]).abs + f(i + 1, heights, n)
+  step2_cost = (heights[i] - height[i + 2]).abs + f(i + 2, heights, n)
+  h[i] = [step1_cost, step2_cost].min
 end

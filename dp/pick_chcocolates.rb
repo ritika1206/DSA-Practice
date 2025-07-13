@@ -8,7 +8,7 @@ def pick_max_chocolates(grid)
   f(0, 0, grid.first.size - 1, grid, grid.first.size, {})
 end
 
-def f(row, alice_col, bob_col, grid, max_col)
+def f(row, alice_col, bob_col, grid, max_col, h)
   return h[[row, alice_col, bob_col]] if h[[row, alice_col, bob_col]]
 
   if row == grid.size - 1
@@ -25,9 +25,9 @@ def f(row, alice_col, bob_col, grid, max_col)
     (-1..1).each do |j|
       next unless (bob_col + j).between?(0, max_col)
         if bob_col == alice_col
-          max = [max, grid[row][bob_col] + f(row + 1, alice_col + i, bob_col + j, grid, max_col)].max
+          max = [max, grid[row][bob_col] + f(row + 1, alice_col + i, bob_col + j, grid, max_col, h)].max
         else
-          max = [max, grid[row][alice_col] + grid[row][bob_col] + f(row + 1, alice_col + i, bob_col + j, grid, max_col)].max
+          max = [max, grid[row][alice_col] + grid[row][bob_col] + f(row + 1, alice_col + i, bob_col + j, grid, max_col, h)].max
         end
     end
   end

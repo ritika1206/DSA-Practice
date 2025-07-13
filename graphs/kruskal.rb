@@ -1,9 +1,10 @@
 # https://www.youtube.com/watch?v=DMnDM_sxVig
 
-# we'll be given adj or edges of graph, we can perform union for each edge and after that check if u and belong to the same component if they do then don't take that edge else take it as part of mst
+# we'll be given adj or edges of graph, we can perform union for each edge and after that check if u and v belong to the same component if they do then don't take that edge else take it as part of mst
 
 # edge - (w, u, v) - an edge from u to v with weight w
 # TC - O(E * log(E))
+# Approach - sort edges by weight and then iterate over them and perform union of u and v if they don't belong to the same component
 def kruskal(edges, n)
   djs = DisJointSet.new(n)
   mst_sum = 0
@@ -11,8 +12,8 @@ def kruskal(edges, n)
   # sort edges by weight
   edges = edges.sort
   edges.each do |(w, u, v)|
-    djs.union(u, v)
-    if djs.find_parent(u) == djs.find_parent(v)
+    if djs.find_parent(u) != djs.find_parent(v)
+      djs.union(u, v)
       mst_sum += w
       mst << [u, v]
     end

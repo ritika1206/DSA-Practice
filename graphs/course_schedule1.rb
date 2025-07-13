@@ -1,8 +1,8 @@
 # https://leetcode.com/problems/course-schedule/
 
 # created the graph using prerequisites list and using dfs to check whether cycle exists in the graph or not
-def can_finish(num_courses, prerequisites)
-  h = Hash.new {|h, k| h[k] = []}
+def can_finish(_num_courses, prerequisites)
+  h = Hash.new { |hash, k| hash[k] = [] }
   prerequisites.each do |(node, parent_node)|
     h[parent_node] << node
   end

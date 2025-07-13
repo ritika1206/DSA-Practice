@@ -1,6 +1,6 @@
 # https://www.youtube.com/watch?v=9twcmtQj4DU
 
-# here we have 2 maintain 2 visited storage - visited and path_visited
+# here we have to maintain 2 visited storage - visited and path_visited
 def detect_cycle(graph, n)
   visited = {}
   (0..n).any? do |node|

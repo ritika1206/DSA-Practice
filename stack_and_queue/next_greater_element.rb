@@ -32,8 +32,8 @@ def next_greater_element(nums1, nums2)
       h[n] = i
   end
   nge = []
-  i = nums2.size - 1
   stack = []
+  i = nums2.size - 1
   while i >= 0
     while stack.size > 0 && stack[-1] <= nums2[i]
       stack.pop
@@ -42,7 +42,9 @@ def next_greater_element(nums1, nums2)
     stack << nums2[i]
     i -= 1
   end
-  nums1.each_with_index do |n, i|
+  nums1.each do |n|
+    next if nge[h[n]].nil?
+
     ans << nge[h[n]]
   end
   ans

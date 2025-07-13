@@ -84,3 +84,32 @@ Discuss
   - intuition behind coordinate shift in 947. Most Stones Removed with Same Row or Column https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/description/ , discuss whole
   - review https://leetcode.com/problems/making-a-large-island/
 
+
+#############################################################################################
+
+- https://leetcode.com/problems/target-sum/description/ (Traget sum, num of expressions which can be formed which will evaluate to target)
+
+Discuss at night -
+
+- Questions both DSA and system design which were asked to him
+- discuss the deploy pipeline and BE system design of which he explain in response
+- some HLD high level questions
+  - monolith vs microservices
+  - monorepo vs ?
+  - what decides how many threads will that server have
+  - LB has IP information of servers
+  - what do we mean by distributed
+  - devise gem
+  - cdn, s3, and devise gem
+  - in server side rendering what is client and server
+  - what is proxy (it is a middleware)
+  - paralellism vs concurrency
+  - difference between distributed and microservice systems
+  - quick brief about all network layers
+- fix VS code settings so that it doesn't display red lines over ruby code
+- Discuss the E-commerce system design which was explain by gpt
+- Discuss how to explain: (what, why, how does it work and service provider of tools like - load balancer, api gateway, task queue, caching DB, search DB, Database, etc)
+- Dicuss about what can be asked related to Java and Sprintboot and how it can be answered
+- ask if screen or video sharing is permitted for ms teams
+- Discuss DSA related questions if any
+  sum of subarray minimuma and maximum
